@@ -6,9 +6,9 @@ const MovieDetails = () => {
   const [movieInfo, setMovieInfo] = useState();
   const { movieId } = useParams();
   useEffect(() => {
-    const fetchMovieDetails = async id => {
+    const fetchMovieDetails = async () => {
       try {
-        const result = await fetchMovieById(id);
+        const result = await fetchMovieById(movieId);
         setMovieInfo(result);
       } catch ({ response }) {
         console.log(response.data.message);
