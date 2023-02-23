@@ -14,8 +14,8 @@ const MovieDetails = () => {
         console.log(response.data.message);
       }
     };
-    fetchMovieDetails();
-  }, []);
+    fetchMovieDetails(movieId);
+  }, [movieId]);
   return (
     <>
       <h1>{movieInfo.title}</h1>
