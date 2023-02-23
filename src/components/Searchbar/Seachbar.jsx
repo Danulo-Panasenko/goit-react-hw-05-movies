@@ -15,11 +15,11 @@ const Searchbar = ({ onSubmit }) => {
   };
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit({ ...state });
+    onSubmit(state.search);
     setState({ ...initialState });
   };
 
-  const { search } = state;
+  const { query } = state;
   return (
     <header className={styles.searchbar}>
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -30,12 +30,12 @@ const Searchbar = ({ onSubmit }) => {
 
         <input
           name="search"
-          value={search}
+          value={query}
           className={styles.input}
           type="text"
           autoComplete="off"
           autoFocus
-          placeholder="Search images and photos"
+          placeholder="Search movies"
           onChange={handleChange}
         />
       </form>
