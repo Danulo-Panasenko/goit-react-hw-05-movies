@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { fetchCredits } from 'shared/services/fetch-api';
 import { useParams, Link } from 'react-router-dom';
-import styles from './Cast.module.css';
 import NotFoundPage from 'components/page/NotFoundPage/NotFoundPage';
+import styles from './Cast.module.css';
+
 const MovieCast = () => {
   const [movieCast, setMovieCast] = useState([]);
   const [error, setError] = useState(false);
