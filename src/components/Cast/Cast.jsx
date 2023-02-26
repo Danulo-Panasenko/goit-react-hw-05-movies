@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { fetchCredits } from 'shared/services/fetch-api';
 import { useParams, Link } from 'react-router-dom';
 import styles from './Cast.module.css';
+import NotFoundPage from 'components/page/NotFoundPage/NotFoundPage';
 const MovieCast = () => {
   const [movieCast, setMovieCast] = useState([]);
   const [error, setError] = useState(false);
@@ -20,6 +21,7 @@ const MovieCast = () => {
   }, [movieId]);
   return (
     <>
+      {error && <NotFoundPage />}
       <Link className={styles.link}>
         {movieCast.slice(0, 12).map(actor => (
           <li className={styles.item} key={actor.cast_id}>

@@ -25,6 +25,7 @@ const MovieRewiewers = () => {
   }, [movieId]);
   return (
     <>
+      {error && <NotFoundPage />}
       <Link className={styles.link}>
         {reviews.map(({ id, author, content }) => (
           <li key={id}>
