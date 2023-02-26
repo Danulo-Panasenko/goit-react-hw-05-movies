@@ -1,10 +1,10 @@
 import styles from './Home.modules.css';
+import ReactPaginate from 'react-paginate';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import MovieList from '../../MovieList/MovieList';
 import Loader from 'shared/Loader/Loader';
 import { fetchTrending } from 'shared/services/fetch-api';
-import ReactPaginate from 'react-paginate';
 
 const Home = () => {
   const [items, setItems] = useState([]);
