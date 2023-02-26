@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
+}
+.pagination li {
+  color: 'black';
+  transition: color 250ms linear;
+}
+.pagination .activePage {
+  color: '#FAD02C';
+}
+.pagination a {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.pagination a.disabled {
+  cursor: default;
+}

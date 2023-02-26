@@ -1,0 +1,40 @@
+.main {
+  background-color: #dedbcb;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
+}
+.pagination li {
+  color: 'black';
+  transition: color 250ms linear;
+}
+.pagination .activePage {
+  color: '#FAD02C';
+}
+.pagination a {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.pagination a.disabled {
+  cursor: default;
+}
+.button {
+  color: #f8f8ff;
+  background-color: #556b2f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}

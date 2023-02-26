@@ -1,0 +1,79 @@
+.main {
+  padding: 10px 16px;
+  background-color: #dedbcb;
+}
+.div {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.img {
+  width: 200px;
+}
+.divinfo {
+  max-width: 500px;
+}
+.name {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.pp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.ppp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sspan {
+  font-weight: 600;
+  font-size: 18px;
+}
+.button {
+  color: #f8f8ff;
+  background-color: #556b2f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.dddd {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.NavLink {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  color: #800000;
+}
+.NavLink::before {
+  background-color: #800000;
+  display: block;
+  content: '';
+  width: 5px;
+  height: 5px;
+  border: 1px;
+  border-radius: 50%;
+}
+.NavLink.active {
+  color: #0000cd;
+}

@@ -1,0 +1,9 @@
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 600;
+}
